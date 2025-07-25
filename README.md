@@ -9,15 +9,7 @@
 
 ## Overview
 
-This repository introduces the **first curated English–Nagamese parallel corpus**, designed to improve machine translation for this underrepresented Assamese-lexified creole spoken in Nagaland, India. We benchmark multiple multilingual models on this corpus and analyze both quantitative and qualitative results.
-
----
-
-## Visual Abstract
-
-> _Overview diagram of dataset pipeline, models, and evaluation strategy_
-
-![Visual Abstract Placeholder](path/to/visual_abstract.png)
+This repository introduces the **first curated English–Nagamese parallel corpus**, designed to improve machine translation for this underrepresented creole spoken in Nagaland, India. We benchmark multiple multilingual models on this corpus and analyze both quantitative and qualitative results.
 
 ---
 
@@ -30,7 +22,8 @@ We compiled a dataset of **8,771 sentence pairs** from four diverse sources:
 - **Nagamese Khobor** – 56 pairs (news domain)
 - **Miscellaneous** – 387 pairs (daily expressions, travel, market, etc.)
 
-![Dataset Stats Placeholder](path/to/dataset_stats.png)
+<img width="1110" height="792" alt="image" src="https://github.com/user-attachments/assets/bf890aea-f5f9-4a00-a992-3c373f87abcf" />
+
 
 ---
 
@@ -38,11 +31,11 @@ We compiled a dataset of **8,771 sentence pairs** from four diverse sources:
 
 We fine-tuned the following multilingual translation models using HuggingFace’s Transformers:
 
-| Model | Params | Description |
+| Model | Params | Pre trained Lnaguages |
 |-------|--------|-------------|
-| `facebook/mbart-large-50-many-to-many-mmt` | 680M | Fine-tuned for many-to-many translation |
-| `facebook/m2m100_418M` | 418M | Supports 100 languages directly |
-| `facebook/nllb-200-distilled-600M` | 600M | Best performance on Nagamese ↔ English |
+| `facebook/mbart-large-50-many-to-many-mmt` | 680M | 50 |
+| `facebook/m2m100_418M` | 418M | 100 |
+| `facebook/nllb-200-distilled-600M` | 600M | 200 |
 
 ---
 
@@ -60,21 +53,13 @@ We used a mix of surface- and character-level metrics:
 
 ### Dataset 1: Bible Only
 
-| Direction | Model | BLEU | TER | CHR-F |
-|-----------|-------|------|-----|--------|
-| En → Naga | mBART | 23.06 | 64.15 | 54.25 |
-|           | NLLB  | 23.01 | 63.54 | **54.98** |
-| Naga → En | mBART | 28.66 | 64.01 | 47.62 |
-|           | NLLB  | **41.35** | **49.55** | **57.81** |
+<img width="543" height="425" alt="image" src="https://github.com/user-attachments/assets/28841a5c-6de6-4625-90e7-9248051a9847" />
+
 
 ### Dataset 2: Bible + News + Comic + Others
 
-| Direction | Model | BLEU | TER | CHR-F |
-|-----------|-------|------|-----|--------|
-| En → Naga | mBART | 21.43 | 64.32 | 53.30 |
-|           | NLLB  | 22.88 | 63.05 | **55.01** |
-| Naga → En | mBART | 28.77 | 66.38 | 47.84 |
-|           | NLLB  | **41.54** | **49.76** | **57.92** |
+<img width="680" height="482" alt="image" src="https://github.com/user-attachments/assets/53cc2ca2-e165-4834-8c8a-f62dbf40316d" />
+
 
 ![Model Comparison Graph Placeholder](path/to/model_comparison_graph.png)
 
