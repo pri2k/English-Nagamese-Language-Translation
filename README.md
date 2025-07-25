@@ -22,7 +22,7 @@ We compiled a dataset of **8,771 sentence pairs** from four diverse sources:
 - **Nagamese Khobor** – 56 pairs (news domain)
 - **Miscellaneous** – 387 pairs (daily expressions, travel, market, etc.)
 
-<img width="1110" height="792" alt="image" src="https://github.com/user-attachments/assets/bf890aea-f5f9-4a00-a992-3c373f87abcf" />
+<img width="658" height="520" alt="image" src="https://github.com/user-attachments/assets/b1a6afb4-9df1-4fa4-a73e-1a24ea58a1d3" />
 
 
 ---
@@ -59,45 +59,6 @@ We used a mix of surface- and character-level metrics:
 ### Dataset 2: Bible + News + Comic + Others
 
 <img width="680" height="482" alt="image" src="https://github.com/user-attachments/assets/53cc2ca2-e165-4834-8c8a-f62dbf40316d" />
-
-
-![Model Comparison Graph Placeholder](path/to/model_comparison_graph.png)
-
----
-
-## Learning Curves
-
-> Loss and metric trend over epochs for NLLB
-
-![Validation Loss Placeholder](path/to/val_loss_curve.png)  
-![BLEU/CHR-F/TER over Epochs Placeholder](path/to/metrics_epoch_curve.png)
-
----
-
-## Qualitative Analysis
-
-We evaluate translations on representative religious, conversational, and formal sentences.
-
-> Example format:
-> - **Input**: Nagamese / English
-> - **Reference**: Human translation
-> - **Outputs**: mBART, M2M100, NLLB
-
-![Sample Translation Table Placeholder](path/to/qualitative_table.png)
-
----
-
-## Attention Visualization
-
-> Cross-attention maps from the decoder layer of NLLB
-
-- **English → Nagamese**
-
-  ![Attention Heatmap En2Naga](path/to/attention_en2naga.png)
-
-- **Nagamese → English**
-
-  ![Attention Heatmap Naga2En](path/to/attention_naga2en.png)
 
 ---
 
