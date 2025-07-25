@@ -1,5 +1,8 @@
 # Low-Resource Neural Machine Translation for English–Nagamese
 
+[![View Dataset on Kaggle](https://img.shields.io/badge/View%20Dataset-Kaggle-blue?logo=kaggle)]([https://www.kaggle.com/your-username/your-dataset-name](https://www.kaggle.com/datasets/belovedorange/eng-naga/data))
+
+
 > **Status**: Under Review  
 > **Institution**: ABV-IIITM Gwalior  
 > **Research Intern**: Anant Maheshwari, Priya Keshri  
@@ -81,4 +84,11 @@ We used a mix of surface- and character-level metrics:
 - Broader NLP applications: sentiment, code-switching, chatbots
 
 ---
+## Contact
+
+For questions or collaboration opportunities, feel free to reach out:
+
+priya.keshrinis@gmail.com
+anant200519@gmail.com
+
 
