@@ -1,6 +1,6 @@
 # Low-Resource Neural Machine Translation for English–Nagamese
 
-[![View Dataset on Kaggle](https://img.shields.io/badge/View%20Dataset-Kaggle-blue?logo=kaggle)]([https://www.kaggle.com/your-username/your-dataset-name](https://www.kaggle.com/datasets/belovedorange/eng-naga/data))
+[![View Dataset on Kaggle]([https://img.shields.io/badge/View%20Dataset-Kaggle-blue?logo=kaggle)]([https://www.kaggle.com/your-username/your-dataset-name](https://www.kaggle.com/datasets/belovedorange/eng-naga/data](https://www.kaggle.com/datasets/belovedorange/first-nagamese-english-parallel-corpus-fnpc-25)))
 
 
 > **Status**: Under Review  
